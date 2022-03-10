@@ -121,6 +121,7 @@ for (let i = 1; i <= 5; i++){
 			resultado1.pago_intereses()
 			console.log(resultado1)
 			console.log(`en el mes ${i} se pagaron ${resultado1.abonos} pesos como abono a capital y ${resultado1.cobro} pesos en abono a intereses`)
+
 			break
 		case 2:
 			Plan_pagos.push(resultado2 = new Cada_Periodo(i,numPK(i).toFixed(2),denPK(i).toFixed(2),PK(numPK(i),denPK(i)),numPK_1(i).toFixed(2),denPK_1(i).toFixed(2),PK_1(numPK_1(i),denPK_1(i)),0,0));
@@ -173,7 +174,66 @@ function anualidad(){
 
 		let res=((tasa_interes * Math.pow(( 1 + tasa_interes),Numero_cuotas))/((Math.pow((1+tasa_interes),Numero_cuotas))-1))*monto_prestamo;
 		document.getElementById("resultado_final").innerHTML = formatter.format(res)
+
+		const tabla11 = document.getElementById('rc11')
+		tabla11.innerText= 1
+		const tabla12 = document.getElementById('rc12')
+		tabla12.innerText = resultado1.capitalPK
+		const tabla13 = document.getElementById('rc13')
+		tabla13.innerText = resultado1.capitalPK_1
+		const tabla14 = document.getElementById('rc14')
+		tabla14.innerText = resultado1.abonos
+		const tabla15 = document.getElementById('rc15')
+		tabla15.innerText = resultado1.cobro
+
+		const tabla21 = document.getElementById('rc21')
+		tabla21.innerText= 2
+		const tabla22 = document.getElementById('rc22')
+		tabla22.innerText = resultado2.capitalPK
+		const tabla23 = document.getElementById('rc23')
+		tabla23.innerText = resultado2.capitalPK_1
+		const tabla24 = document.getElementById('rc24')
+		tabla24.innerText = resultado2.abonos
+		const tabla25 = document.getElementById('rc25')
+		tabla25.innerText = resultado2.cobro
+
+		const tabla31 = document.getElementById('rc31')
+		tabla31.innerText= 3
+		const tabla32 = document.getElementById('rc32')
+		tabla32.innerText = resultado3.capitalPK
+		const tabla33 = document.getElementById('rc33')
+		tabla33.innerText = resultado3.capitalPK_1
+		const tabla34 = document.getElementById('rc34')
+		tabla34.innerText = resultado3.abonos
+		const tabla35 = document.getElementById('rc35')
+		tabla35.innerText = resultado3.cobro
+
+		const tabla41 = document.getElementById('rc41')
+		tabla41.innerText= 4
+		const tabla42 = document.getElementById('rc42')
+		tabla42.innerText = resultado4.capitalPK
+		const tabla43 = document.getElementById('rc43')
+		tabla43.innerText = resultado4.capitalPK_1
+		const tabla44 = document.getElementById('rc44')
+		tabla44.innerText = resultado4.abonos
+		const tabla45 = document.getElementById('rc45')
+		tabla45.innerText = resultado4.cobro
+		
+		const tabla51 = document.getElementById('rc51')
+		tabla51.innerText= 5
+		const tabla52 = document.getElementById('rc52')
+		tabla52.innerText = resultado5.capitalPK
+		const tabla53 = document.getElementById('rc53')
+		tabla53.innerText = resultado5.capitalPK_1
+		const tabla54 = document.getElementById('rc54')
+		tabla54.innerText = resultado5.abonos
+		const tabla55 = document.getElementById('rc55')
+		tabla55.innerText = resultado5.cobro
 		}
+
+
+
+
 	else{
 		alert("no tienes edad suficiente para solicitar un credito!!")
 		alert("Te haremos unas preguntas que te ayudaran a sumar puntos para calificar de todas maneras para el credito")
@@ -237,6 +297,62 @@ function anualidad(){
 	
 			let res=((tasa_interes * Math.pow(( 1 + tasa_interes),Numero_cuotas))/((Math.pow((1+tasa_interes),Numero_cuotas))-1))*monto_prestamo;
 			document.getElementById("resultado_final").innerHTML = formatter.format(res)
+
+			const tabla11 = document.getElementById('rc11')
+			tabla11.innerText= 1
+			const tabla12 = document.getElementById('rc12')
+			tabla12.innerText = resultado1.capitalPK
+			const tabla13 = document.getElementById('rc13')
+			tabla13.innerText = resultado1.capitalPK_1
+			const tabla14 = document.getElementById('rc14')
+			tabla14.innerText = resultado1.abonos
+			const tabla15 = document.getElementById('rc15')
+			tabla15.innerText = resultado1.cobro
+	
+			const tabla21 = document.getElementById('rc21')
+			tabla21.innerText= 2
+			const tabla22 = document.getElementById('rc22')
+			tabla22.innerText = resultado2.capitalPK
+			const tabla23 = document.getElementById('rc23')
+			tabla23.innerText = resultado2.capitalPK_1
+			const tabla24 = document.getElementById('rc24')
+			tabla24.innerText = resultado2.abonos
+			const tabla25 = document.getElementById('rc25')
+			tabla25.innerText = resultado2.cobro
+	
+			const tabla31 = document.getElementById('rc31')
+			tabla31.innerText= 3
+			const tabla32 = document.getElementById('rc32')
+			tabla32.innerText = resultado3.capitalPK
+			const tabla33 = document.getElementById('rc33')
+			tabla33.innerText = resultado3.capitalPK_1
+			const tabla34 = document.getElementById('rc34')
+			tabla34.innerText = resultado3.abonos
+			const tabla35 = document.getElementById('rc35')
+			tabla35.innerText = resultado3.cobro
+	
+			const tabla41 = document.getElementById('rc41')
+			tabla41.innerText= 4
+			const tabla42 = document.getElementById('rc42')
+			tabla42.innerText = resultado4.capitalPK
+			const tabla43 = document.getElementById('rc43')
+			tabla43.innerText = resultado4.capitalPK_1
+			const tabla44 = document.getElementById('rc44')
+			tabla44.innerText = resultado4.abonos
+			const tabla45 = document.getElementById('rc45')
+			tabla45.innerText = resultado4.cobro
+			
+			const tabla51 = document.getElementById('rc51')
+			tabla51.innerText= 5
+			const tabla52 = document.getElementById('rc52')
+			tabla52.innerText = resultado5.capitalPK
+			const tabla53 = document.getElementById('rc53')
+			tabla53.innerText = resultado5.capitalPK_1
+			const tabla54 = document.getElementById('rc54')
+			tabla54.innerText = resultado5.abonos
+			const tabla55 = document.getElementById('rc55')
+			tabla55.innerText = resultado5.cobro
+
 		}
 		else{
 			alert("lo sentimos, aunque tienes puntos extras no es suficiente, no podemos darte el credito")
