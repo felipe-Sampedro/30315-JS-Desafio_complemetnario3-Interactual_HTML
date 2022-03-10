@@ -157,10 +157,13 @@ for (let i = 1; i <= 5; i++){
 Plan_pagos.join('--')
 console.log(Plan_pagos)
 
-const borrar = document.querySelectorAll('td')
+const borrar = document.getElementsByTagName('td')
 const amortizacion = document.querySelector('.resultado')
 const limpiar = document.querySelector('.resetear')
-limpiar.onclick = () => {amortizacion.innerText="", borrar.innerText=""}
+limpiar.onclick = () => {amortizacion.innerText="";
+	for (const element of borrar){
+		element.innerText=""}
+	}
 
 
 // funcion principal para calculo de cuota mensual a pagar del credito
